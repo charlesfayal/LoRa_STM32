@@ -70,7 +70,7 @@ void  GPIO_EXTI_FALLINGInit( void  )
   HW_GPIO_Init( GPIO_EXTI_PORT, GPIO_EXTI_PIN, &GPIO_InitStruct );
 	
 	/* Enable and set EXTI lines 4 to 15 Interrupt to the lowest priority */
-  HAL_NVIC_SetPriority(EXTI4_15_IRQn, 2, 0);
+  HAL_NVIC_SetPriority(EXTI4_15_IRQn, 3, 0);
   HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
 }
 
@@ -86,7 +86,7 @@ void  GPIO_EXTI_RISINGInit( void  )
   HW_GPIO_Init( GPIO_EXTI_PORT, GPIO_EXTI_PIN, &GPIO_InitStruct );
 	
 	/* Enable and set EXTI lines 4 to 15 Interrupt to the lowest priority */
-  HAL_NVIC_SetPriority(EXTI4_15_IRQn, 2, 0);
+  HAL_NVIC_SetPriority(EXTI4_15_IRQn, 3, 0);
   HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
 }
 
@@ -102,7 +102,7 @@ void  GPIO_EXTI_RISING_FALLINGInit( void  )
   HW_GPIO_Init( GPIO_EXTI_PORT, GPIO_EXTI_PIN, &GPIO_InitStruct );
 	
 	/* Enable and set EXTI lines 4 to 15 Interrupt to the lowest priority */
-  HAL_NVIC_SetPriority(EXTI4_15_IRQn, 2, 0);
+  HAL_NVIC_SetPriority(EXTI4_15_IRQn, 3, 0);
   HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
 }
 
